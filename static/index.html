@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClaimCheck API | Hallucination Firewall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="title">Claim<span>Check</span></h1>
+            <p class="subtitle">The ultimate hallucination & fact-verification layer for AI-generated text.</p>
+        </header>
+
+        <section class="input-section glass-panel">
+            <label for="text-input" class="visually-hidden">AI Generated Text</label>
+            <textarea id="text-input" placeholder="Paste your AI-generated text here to verify factual claims..."></textarea>
+            <div class="action-bar">
+                <span class="status-indicator" id="status-indicator">Ready to check</span>
+                <button id="verify-btn" class="primary-btn">
+                    <span class="btn-text">Run Verification</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </div>
+        </section>
+
+        <section class="results-section" id="results-section">
+            <div class="results-header">
+                <h2>Verification Report</h2>
+                <div class="stats" id="stats">
+                    <!-- Stats injected via JS -->
+                </div>
+            </div>
+            <div class="claims-list" id="claims-list">
+                <!-- Claims injected via JS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>

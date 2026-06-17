@@ -1,0 +1,23 @@
+[
+    {
+        "claim": "The moon landing happened in 1969.",
+        "verdict": "confirmed",
+        "confidenceScore": 95,
+        "sourceLink": "https://www.history.com/articles/moon-landing-1969",
+        "reasoning": "Multiple sources confirm the moon landing occurred on July 20, 1969, with Neil Armstrong and Buzz Aldrin as the first humans to land on the moon."
+    },
+    {
+        "claim": "Humans have successfully established a permanent colony on Mars in 2024.",
+        "verdict": "contradicted",
+        "confidenceScore": 95,
+        "sourceLink": "https://www.humanmars.net/p/mars-colonization-timeline.html",
+        "reasoning": "The claim states a permanent Mars colony was established in 2024, but all search results indicate Mars colonization remains a future goal. The timeline shows first humans on Mars are projected for the 2030s, with base expansion in the 2040s. No crewed missions to Mars have occurred as of the search results, directly contradicting the 2024 claim."
+    },
+    {
+        "claim": "Python was invented by Guido van Rossum.",
+        "verdict": "confirmed",
+        "confidenceScore": 98,
+        "sourceLink": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+        "reasoning": "All three search results explicitly confirm that Guido van Rossum created the Python programming language. Wikipedia states he is 'Known for Creating the Python programming language' and was the 'benevolent dictator for life' (BDFL). Computer History Museum confirms Python was 'First released by its creator Guido van Rossum in 1991.' Reddit also refers to him as 'the founder of Python programming language.' The claim is well-supported by multiple authoritative sources."
+    }
+]
