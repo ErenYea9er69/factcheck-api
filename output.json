@@ -1,23 +1,966 @@
-[
+{
+  "run_at": "2026-06-17T14:22:10.264970+00:00",
+  "total": 10,
+  "passed": 7,
+  "failed": 1,
+  "warned": 2,
+  "tests": [
     {
-        "claim": "The moon landing happened in 1969.",
-        "verdict": "confirmed",
-        "confidenceScore": 95,
-        "sourceLink": "https://www.history.com/articles/moon-landing-1969",
-        "reasoning": "Multiple sources confirm the moon landing occurred on July 20, 1969, with Neil Armstrong and Buzz Aldrin as the first humans to land on the moon."
+      "id": "baseline_confirmed",
+      "label": "Baseline \u2014 well-known confirmed facts",
+      "findings": [
+        {
+          "check": "min_claims",
+          "status": "PASS",
+          "detail": "got 3, expected \u2265 3"
+        },
+        {
+          "check": "all_verdict",
+          "status": "PASS",
+          "detail": "all VerdictEnum.confirmed"
+        },
+        {
+          "check": "min_confidence",
+          "status": "PASS",
+          "detail": "all \u2265 85"
+        }
+      ],
+      "results": [
+        {
+          "claim": "The moon landing happened in 1969.",
+          "char_start": 0,
+          "char_end": 33,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "1969 Moon Landing - Date, Facts, Video - History.com",
+              "url": "https://www.history.com/articles/moon-landing-1969",
+              "snippet": "# 1969 Moon Landing. On July 20, 1969, American astronauts Neil Armstrong (1930-2012) and Edwin \"Buzz\" Aldrin (1930-) became the first humans ever to land on the moon. About six-and-a-half hours later, Armstrong became the first person to walk on the moon. The American effort to send astronauts to the moon had its origins in an appeal President Kennedy made to a special joint session of Congress o",
+              "published_date": null
+            },
+            {
+              "title": "1969 Moon Landing \u2014 The First Man on the Moon \u2013 LibertyFlags.com",
+              "url": "https://libertyflags.com/blogs/default-blog/1969-moon-landing-the-first-man-on-the-moon",
+              "snippet": "# 1969 Moon Landing \u2014 The First Man on the Moon. On July 20th, 1969, Commander Neil Armstrong and Lunar Module Pilot Buzz Aldrin landed the Apollo Lunar Module Eagle on the surface of the Moon. On July 21st, 1969, at 02:56 UTC, Neil Armstrong became the first human to step onto the lunar surface. Kennedy proposed the national goal of \u201clanding a man on the Moon and returning him safely to the Earth",
+              "published_date": null
+            },
+            {
+              "title": "On this day 55 years ago, man landed on the moon. July 20, 1969 : r/NoSodiumStarfield",
+              "url": "https://www.reddit.com/r/NoSodiumStarfield/comments/1e7wfzm/on_this_day_55_years_ago_man_landed_on_the_moon",
+              "snippet": "# On this day 55 years ago, man landed on the moon. Skip to main contentOn this day 55 years ago, man landed on the moon. Sign UpSign up for RedditLog InLog in to Reddit. Image 1 Go to NoSodiumStarfield. Image 2: r/NoSodiumStarfield - On this day 55 years ago, man landed on the moon. July 20, 1969Image 3: r/NoSodiumStarfield - On this day 55 years ago, man landed on the moon. Image 6: Thumbnail im",
+              "published_date": null
+            },
+            {
+              "title": "Apollo 11 - NASA",
+              "url": "https://www.nasa.gov/mission/apollo-11",
+              "snippet": "Image 55: Astronaut Buzz Aldrin stands on the Moon facing a U.S. flag during the Apollo 11 mission in July 1969. Armstrong was one of nine men chosen of NASA\u2019s second astronaut group in 1962, and flew to space on the Gemini 8 mission in 1966 before being assigned to the Apollo 11 mission. Watch highlights from the Apollo 11 mission including the launch on July 16, 1969, the landing of the lunar mo",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including History.com, LibertyFlags.com, and NASA, directly confirm that the Apollo 11 mission landed on the moon on July 20, 1969, with Neil Armstrong and Buzz Aldrin becoming the first humans to walk on the lunar surface.",
+          "checked_at": "2026-06-17T14:22:22.147873+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "Python was invented by Guido van Rossum.",
+          "char_start": 35,
+          "char_end": 74,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Guido van Rossum - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+              "snippet": "| Known\u00a0for | Creating the Python programming language \"Python (programming language)\") |. He is the creator of the Python programming language \"Python (programming language)\"), for which he was the \"benevolent dictator for life\" (BDFL) until he stepped down from the position on 12 July 2018. Van Rossum was born and raised in the Netherlands, where he received a master's degree in mathematics and ",
+              "published_date": null
+            },
+            {
+              "title": "25 Years of Python at CWI",
+              "url": "https://www.cwi.nl/en/news/25-years-of-python-at-cwi",
+              "snippet": "# 25 Years of Python at CWI. At the ACM website an interview was published with Guido van Rossum on 25 years of Python. Science journalist Bennie Mols, author of the ACM article, told his listeners more about the history of Python on Radio 5 in the programme De Kennis van Nu on 25 February 2015. Dutch software engineer Guido van Rossum created the language in 1990 while working at the Centre for M",
+              "published_date": null
+            },
+            {
+              "title": "Guido van Rossum - CHM - Computer History Museum",
+              "url": "https://computerhistory.org/profile/guido-van-rossum",
+              "snippet": "# Guido van Rossum. #### For the creation and evolution of the Python programming language and for leadership of its community. First released by its creator Guido van Rossum in 1991, Python has undergone continual improvement and has become a powerful yet flexible and easy-to- learn \u201cSwiss Army knife\u201d for programmers. In a 1999 report, Van Rossum highlighted the following as his goals for Python:",
+              "published_date": null
+            },
+            {
+              "title": "Guido Van Rossum Python Creator : r/learnprogramming - Reddit",
+              "url": "https://www.reddit.com/r/learnprogramming/comments/zaakd1/guido_van_rossum_python_creator",
+              "snippet": "Guido van Rossum the founder of Python programming language explained very beautifully why does python exists in the World today. r/Python.",
+              "published_date": null
+            },
+            {
+              "title": "Why developers still flock to Python: Guido van Rossum on ...",
+              "url": "https://github.blog/developer-skills/programming-languages-and-frameworks/why-developers-still-flock-to-python-guido-van-rossum-on-readability-ai-and-the-future-of-programming",
+              "snippet": "# Why developers still flock to Python: Guido van Rossum on readability, AI, and the future of programming. When we shared this year\u2019s Octoverse data with Guido van Rossum, the creator of Python, his first reaction was genuine surprise. While TypeScript overtook Python to become the most used language on GitHub as of August 2025 (marking the biggest language shift in more than a decade), Python st",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including Wikipedia and the Computer History Museum, explicitly state that Guido van Rossum created the Python programming language.",
+          "checked_at": "2026-06-17T14:22:22.176605+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "The Eiffel Tower is located in Paris, France.",
+          "char_start": 76,
+          "char_end": 120,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Eiffel Tower in Paris, France - Apple Maps",
+              "url": "https://maps.apple.com/place?place-id=IDBCCCA2A9059133",
+              "snippet": "# Apple Maps. Have a Business on Maps? # Eiffel Tower. The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889. Locally nicknamed \"La dame de fer\", it was constructed as the centerpiece of the 1889 World's Fair, and to crown the centennial anniversary of the F",
+              "published_date": null
+            },
+            {
+              "title": "Eiffel Tower address: quick access from Paris or France - PARISCityVISION",
+              "url": "https://www.pariscityvision.com/en/paris/landmarks/eiffel-tower/address",
+              "snippet": "# Address of the Tour Eiffel for simple access. The **Eiffel Tower** is located on the Champs de Mars at 5 Avenue Anatole France in the **7th arrondissement of Paris**. Are you looking for the easiest way to get to the **Eiffel Tower** or the fastest route? * Line 4 (Metro) Champ de Mars - Tour Eiffel, (RER C line). Here are five routes for quick access to the Eiffel Tower from the Arc de Triomphe",
+              "published_date": null
+            },
+            {
+              "title": "Eiffel Tower | National Geographic Kids",
+              "url": "https://kids.nationalgeographic.com/history/article/eiffel-tower",
+              "snippet": "# Eiffel Tower. The Eiffel Tower in Paris, France, has serious celeb status. Completed in March 1889, it's one of the most recognizable monuments in the world. And the site, which is also known as the Iron Lady, receives nearly seven millions tourists a year. If you were in charge of constructing the Eiffel Tower, where else would you live but ... Gustave Eiffel, who designed the landmark, built h",
+              "published_date": null
+            },
+            {
+              "title": "The Eiffel Tower in Paris France",
+              "url": "https://www.youtube.com/watch?v=5ywbWF1gLpI",
+              "snippet": "The Eiffel Tower in Paris France\nJT on The Go\n846 subscribers\n10 likes\n267 views\n9 Jan 2026\nToday we will be visiting the Eiffel Tower. The Eiffel Tower is the icon of Paris, France, and one of the most recognizable landmarks in the world. We will be exploring the 3rd floor observatory before visiting the 2nd-floor observatory. Hope you enjoy! #eiffeltower #paris #cityoflight #france #europe #pari",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple sources, including Apple Maps, PARISCityVISION, and National Geographic Kids, explicitly state that the Eiffel Tower is located in Paris, France.",
+          "checked_at": "2026-06-17T14:22:22.162140+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
     },
     {
-        "claim": "Humans have successfully established a permanent colony on Mars in 2024.",
-        "verdict": "contradicted",
-        "confidenceScore": 95,
-        "sourceLink": "https://www.humanmars.net/p/mars-colonization-timeline.html",
-        "reasoning": "The claim states a permanent Mars colony was established in 2024, but all search results indicate Mars colonization remains a future goal. The timeline shows first humans on Mars are projected for the 2030s, with base expansion in the 2040s. No crewed missions to Mars have occurred as of the search results, directly contradicting the 2024 claim."
+      "id": "hard_contradiction",
+      "label": "Hard contradiction \u2014 fabricated facts",
+      "findings": [
+        {
+          "check": "min_claims",
+          "status": "PASS",
+          "detail": "got 2, expected \u2265 2"
+        }
+      ],
+      "results": [
+        {
+          "claim": "Humans have successfully established a permanent colony on Mars in 2024.",
+          "char_start": 0,
+          "char_end": 71,
+          "verdict": "contradicted",
+          "confidence_score": 95,
+          "sources": [
+            {
+              "title": "SpaceX Mars colonization program - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/SpaceX_Mars_colonization_program",
+              "snippet": "A successful colonization, with a human presence established on Mars expanding over many decades, would ultimately have involved many more economic actors than SpaceX.( Musk stated in 2024 that being able to make use of local resources on Mars would be essential for establishing a self-sustaining colony, and that SpaceX intended a colony to develop self-sufficiency in \"seven to nine years\".( Propo",
+              "published_date": null
+            },
+            {
+              "title": "Colonization of Mars | History | Research Starters - EBSCO",
+              "url": "https://www.ebsco.com/research-starters/history/colonization-mars",
+              "snippet": "In 2012, Mars One, a private corporation founded by two Dutch entrepreneurs, announced plans to establish the first human colony on Mars. The initial goal of Mars One was to begin launching the first equipment for the project by 2018; however, the considerable cost and logistics of the plan forced the company to push back its timeline. By 2017, Mars One had selected one hundred potential candidate",
+              "published_date": null
+            },
+            {
+              "title": "When will the first colony on Mars be established? : r/IsaacArthur",
+              "url": "https://www.reddit.com/r/IsaacArthur/comments/1g30a61/when_will_the_first_colony_on_mars_be_established",
+              "snippet": "Image 19: u/--Sovereign-- avatar\n\n--Sovereign--\n\n\u20222y ago\n\nYou dropped a 1, surely you meant 2189.\n\n Reply  Share \n\n# People also ask about section\n\n People also ask about \n\nTimeline for establishing a colony on Mars\n\nRobots and AI roles in Mars colonization\n\nReasons for human colonization of Mars\n\nBenefits of living on Mars\n\nImpact of AI on future societies\n\n Public \n\nAnyone can view, post, and co",
+              "published_date": null
+            },
+            {
+              "title": "Will humans ever permanently settle on Mars? - Aerospace America",
+              "url": "https://aerospaceamerica.aiaa.org/departments/will-humans-ever-permanently-settle-on-mars",
+              "snippet": "Yes. Humans will eventually have a permanent presence on Mars because of our spirit of exploration and the opportunity to learn on the first habitable planet other than our own. And it\u2019s a relatively close opportunity to hone the space exploration skills we will have developed on the moon. How big that presence becomes is a function of questions that we can\u2019t answer yet: What is our space travel c",
+              "published_date": null
+            },
+            {
+              "title": "Mars Colonization: Beyond Getting There - PMC - NIH",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6383964",
+              "snippet": "Upon reaching the surface, the astronauts will be expected to establish a permanent settlement on Mars, collecting vital data and conducting experiments, with the clear expectation never to return to Earth again (Figure2).19\n\nFigure 2\nImage 16: Figure 2\n\nOpen in a new tab\n\nModular Martian settlement (artistic representation). Several alternative modular concepts have been proposed, including one b",
+              "published_date": null
+            }
+          ],
+          "reasoning": "The search results indicate that Mars colonization is a future goal, with SpaceX's Elon Musk stating in 2024 that a self-sustaining colony could develop in 'seven to nine years,' and Mars One's earlier plans having been delayed before the company went bankrupt. No source confirms a permanent colony was established in 2024.",
+          "checked_at": "2026-06-17T14:22:31.360463+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "Water boils at 100 degrees Celsius at standard atmospheric pressure.",
+          "char_start": 73,
+          "char_end": 140,
+          "verdict": "confirmed",
+          "confidence_score": 95,
+          "sources": [
+            {
+              "title": "Boiling & Atmospheric Pressure",
+              "url": "https://terpconnect.umd.edu/~wbreslyn/chemistry/pressure/atmo-pressure.html",
+              "snippet": "Atmospheric pressure is sometimes called barometric pressure. On Earth the atmospheric pressure (at sea level) is defined as 1 atmosphere (atm). Pure water boils at 100 degrees Celsius at Standard Pressure (1 atm).\n\nOther Videos\n\nAll rights reserved. \u00a9 2019 Wayne Breslyn [...] ## Boiling & Atmospheric Pressure\n\n### \n\n# Atmospheric Pressure and Boiling\n\nThe boiling point of a liquid is directly aff",
+              "published_date": null
+            },
+            {
+              "title": "Boiling point - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Boiling_point",
+              "snippet": "There are two conventions regarding the standard boiling point of water: The normal boiling point is commonly given as 100 \u00b0C (212 \u00b0F) (actually 99.97 \u00b0C (211.9 \u00b0F) following the thermodynamic definition of the Celsius scale based on the kelvin) at a pressure of 1 atm (101.325 kPa). The IUPAC-recommended standard boiling point of water at a standard pressure of 100 kPa (1 bar) is 99.61 \u00b0C (211.3 \u00b0",
+              "published_date": null
+            },
+            {
+              "title": "Boiling Point - TerpConnect",
+              "url": "https://terpconnect.umd.edu/~wbreslyn/chemistry/pressure/boiling-point.html",
+              "snippet": "## Boiling Point\n\n Boiling\n Atmospheric Pressure\n Vapor Pressure\n Boiling Point\n More Chem Help\n\n# Boiling Point\n\nThe boiling point is the temperature at which boiling occurs for a specific liquid. For example, for water, the boiling point is 100 degrees Celsius at a pressure of 1 atm. The boiling point of a liquid depends on temperature, atmospheric pressure, and the vapor pressure of the liquid.",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple sources confirm that water boils at 100\u00b0C at standard atmospheric pressure (1 atm). While Wikipedia notes the precise thermodynamic value is 99.97\u00b0C, the claim of 100\u00b0C is widely accepted and directly supported by the TerpConnect and other educational sources.",
+          "checked_at": "2026-06-17T14:22:31.049569+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
     },
     {
-        "claim": "Python was invented by Guido van Rossum.",
-        "verdict": "confirmed",
-        "confidenceScore": 98,
-        "sourceLink": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
-        "reasoning": "All three search results explicitly confirm that Guido van Rossum created the Python programming language. Wikipedia states he is 'Known for Creating the Python programming language' and was the 'benevolent dictator for life' (BDFL). Computer History Museum confirms Python was 'First released by its creator Guido van Rossum in 1991.' Reddit also refers to him as 'the founder of Python programming language.' The claim is well-supported by multiple authoritative sources."
+      "id": "outdated_claim",
+      "label": "Outdated \u2014 claims that were once true",
+      "findings": [
+        {
+          "check": "min_claims",
+          "status": "PASS",
+          "detail": "got 2, expected \u2265 2"
+        },
+        {
+          "check": "no_verdict",
+          "status": "WARN",
+          "detail": "unexpectedly got VerdictEnum.confirmed for: ['Elon Musk is the richest person in the world.']"
+        }
+      ],
+      "results": [
+        {
+          "claim": "Elon Musk is the richest person in the world.",
+          "char_start": 0,
+          "char_end": 44,
+          "verdict": "confirmed",
+          "confidence_score": 95,
+          "sources": [
+            {
+              "title": "Elon Musk",
+              "url": "https://en.wikipedia.org/wiki/Elon_Musk",
+              "snippet": "Elon Reeve Musk (/\u02c8 i\u02d0 l \u0252 n/\u24d8_EE-lon_; born June 28, 1971) is a businessman and former public official known for his leadership of Tesla and SpaceX. Musk has been the wealthiest person in the world since 2025, and became the first and only trillionaire in terms of US dollars in 2026; as of June 2026,( estimates his net worth to be US$1.3 trillion.",
+              "published_date": null
+            },
+            {
+              "title": "Elon Musk's stratospheric rise to trillionaire status - in charts - BBC",
+              "url": "https://www.bbc.com/news/articles/c4gyp523ly8o",
+              "snippet": "By January 2021, the tech mogul had risen to become the world's richest person, briefly overtaking Jeff Bezos.\n\nBut his fortune dipped in 2022 amid a downturn in US tech stocks, and fell sharply again in early 2025, as investor concerns over his role in the Trump administration coincided with a slump in Tesla's share price.\n\nEach time, he has come back stronger. Now a trillionaire, Musk is almost ",
+              "published_date": null
+            },
+            {
+              "title": "Elon Musk - Bloomberg Billionaires Index",
+              "url": "https://www.bloomberg.com/billionaires/profiles/elon-r-musk",
+              "snippet": "Tesla became the world's most valuable carmaker in July 2020 and further gains led to Musk becoming the world's richest person in January 2021. He announced in October 2021 that Tesla would move its headquarters from Palo Alto, California to Austin, Texas.\n\nIn April 2022 Musk made an offer to buy Twitter Inc for $44 billion after acquiring a stake in the social-media firm. After its board agreed t",
+              "published_date": null
+            }
+          ],
+          "reasoning": "The Wikipedia snippet explicitly states that Musk has been the wealthiest person in the world since 2025, and the BBC article confirms he became the world's richest person in January 2021 and has now reached trillionaire status. Multiple sources consistently support this claim.",
+          "checked_at": "2026-06-17T14:22:48.697619+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "Twitter is the name of the social media platform formerly known as Twitter.",
+          "char_start": 46,
+          "char_end": 120,
+          "verdict": "contradicted",
+          "confidence_score": 95,
+          "sources": [
+            {
+              "title": "X (Formerly known as Twitter) - The Patterson Foundation",
+              "url": "http://www.thepattersonfoundation.org/tpf-tech-excellence/x-twitter.html",
+              "snippet": "X, previously recognized as Twitter, is a dynamic platform that enables friends, family, and colleagues to stay interconnected through the swift and regular exchange of messages. Users engage by posting text, images, videos, and links. These contributions are not only displayed on individual profiles but also broadcast to followers and remain readily discoverable within X's search-friendly environ",
+              "published_date": null
+            },
+            {
+              "title": "Why can\u2019t we stop calling X, Twitter? | CNN Business",
+              "url": "https://www.cnn.com/2024/02/23/tech/twitter-x-rebrand-cec",
+              "snippet": "It seems that, even though the logo was switched out and verbiage on the website changed, the platform still can\u2019t quite \u201cbid adieu to the twitter brand,\u201d as its new owner, billionaire Elon Musk, said in a tweet the day of the rebrand.\n\nWhile some people (mainly fans of Musk) have embraced the X brand, most have not.\n\nMany people, both online and in person, still call the platform Twitter, and ref",
+              "published_date": null
+            },
+            {
+              "title": "Twitter\u2019s Rebrand Is A Cautionary Lesson For Marketers. Here\u2019s Why",
+              "url": "https://www.forbes.com/sites/marcuscollins/2023/07/30/the-real-lesson-to-be-learned-from-twitters-rebrand",
+              "snippet": "Furthermore, while the ambitions for Twitter have changed, the product and its stewardship, unfortunately, have not. There are no material differences in the product to deem this change necessary. The platform's functionality and aesthetics are practically identical to what they were before the renaming. There is no real change happening beneath the veneer. We may call it X, but it's still the sam",
+              "published_date": null
+            }
+          ],
+          "reasoning": "The claim states that Twitter is the name of the platform formerly known as Twitter, which is logically circular and factually incorrect. The search results confirm that the platform formerly known as Twitter is now called X, not Twitter.",
+          "checked_at": "2026-06-17T14:22:48.693276+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
+    },
+    {
+      "id": "unverifiable_vague",
+      "label": "Unverifiable \u2014 vague or subjective statements",
+      "findings": [
+        {
+          "check": "min_claims",
+          "status": "PASS",
+          "detail": "got 1, expected \u2265 1"
+        }
+      ],
+      "results": [
+        {
+          "claim": "This new drug cures 99% of all cancers in clinical settings.",
+          "char_start": 90,
+          "char_end": 149,
+          "verdict": "contradicted",
+          "confidence_score": 95,
+          "sources": [
+            {
+              "title": "A new pancreatic cancer drug is changing survival rates for one of the deadliest cancers",
+              "url": "https://www.uchealth.org/today/new-pancreatic-cancer-drug-daraxonrasib",
+              "snippet": "# New pancreatic cancer drug daraxonrasib shows breakthrough in survival - UCHealth Today. Pancreatic cancer outcomes are improving as the drug daraxonrasib boosts survival, AI detects the disease earlier and new immunotherapies emerge. Image 4: A doctor talks with a patient. Treatment options and survival rates for people with pancreatic cancer are improving dramatically with the discovery of new",
+              "published_date": null
+            },
+            {
+              "title": "New treatment eliminates bladder cancer in 82% of patients",
+              "url": "https://news.keckmedicine.org/new-treatment-eliminates-bladder-cancer-in-82-of-patients",
+              "snippet": "A new study finds that a drug-device duo eliminates bladder cancer in 82% of patients with a certain type of treatment-resistant bladder cancer. A new study finds that a drug-device duo eliminates bladder cancer in 82% of patients with a certain type of treatment-resistant bladder cancer. LOS ANGELES \u2014 A new drug-releasing system, TAR-200, eliminated tumors in 82% of patients in a phase 2 clinical",
+              "published_date": null
+            },
+            {
+              "title": "Promising drug for cancer treatment begins trials",
+              "url": "https://www.facingourrisk.org/XRAY/promising-drug-for-cancer-treatment",
+              "snippet": "# Article: Promising drug for cancer treatment begins clinical trials. Researchers at City of Hope are testing a new type of cancer treatment drug. When tested in animals and cells taken from human cancers, this new drug prevented the growth of many types of cancer. ## What is this article about? This article describes the first studies in animals and human cells of a new drug for cancer treatment",
+              "published_date": null
+            }
+          ],
+          "reasoning": "The claim states a new drug cures 99% of all cancers, but the search results show the highest reported success rate is 82% for a specific type of bladder cancer, and other results discuss drugs for pancreatic cancer or treatments still in early trials, none supporting a 99% cure rate for all cancers.",
+          "checked_at": "2026-06-17T14:22:57.776890+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
+    },
+    {
+      "id": "dedup_stress",
+      "label": "Deduplication \u2014 near-identical claims",
+      "findings": [
+        {
+          "check": "max_claims",
+          "status": "FAIL",
+          "detail": "got 4, expected \u2264 3"
+        }
+      ],
+      "results": [
+        {
+          "claim": "Python was created by Guido van Rossum.",
+          "char_start": 0,
+          "char_end": 38,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Guido van Rossum - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+              "snippet": "| Known\u00a0for | Creating the Python programming language \"Python (programming language)\") |. He is the creator of the Python programming language \"Python (programming language)\"), for which he was the \"benevolent dictator for life\" (BDFL) until he stepped down from the position on 12 July 2018. Van Rossum was born and raised in the Netherlands, where he received a master's degree in mathematics and ",
+              "published_date": null
+            },
+            {
+              "title": "Why Python is the language of AI: insights from Guido van Rossum ...",
+              "url": "https://www.youtube.com/watch?v=QXE5rEVlu20&vl=en",
+              "snippet": "Why Python is the language of AI: insights from Guido van Rossum (creator of Python)\nGitHub\n649000 subscribers\n7074 likes\n242999 views\n25 Nov 2025\nWe sat down with Guido van Rossum, the creator of Python, to discuss the origins of the language and its incredible trajectory in the 2025 Octoverse report. From its surprising name origin to its dominance in the age of AI, Guido shares his perspective ",
+              "published_date": null
+            },
+            {
+              "title": "Guido Van Rossum Python Creator : r/learnprogramming - Reddit",
+              "url": "https://www.reddit.com/r/learnprogramming/comments/zaakd1/guido_van_rossum_python_creator",
+              "snippet": "Guido van Rossum the founder of Python programming language explained very beautifully why does python exists in the World today. r/Python.",
+              "published_date": null
+            },
+            {
+              "title": "Why developers still flock to Python: Guido van Rossum on ...",
+              "url": "https://github.blog/developer-skills/programming-languages-and-frameworks/why-developers-still-flock-to-python-guido-van-rossum-on-readability-ai-and-the-future-of-programming",
+              "snippet": "# Why developers still flock to Python: Guido van Rossum on readability, AI, and the future of programming. When we shared this year\u2019s Octoverse data with Guido van Rossum, the creator of Python, his first reaction was genuine surprise. While TypeScript overtook Python to become the most used language on GitHub as of August 2025 (marking the biggest language shift in more than a decade), Python st",
+              "published_date": null
+            },
+            {
+              "title": "Guido van Rossum: The Early Years of Python",
+              "url": "https://www.computer.org/csdl/magazine/co/2015/02/mco2015020007/13rRUy3gmYB",
+              "snippet": "# Guido van Rossum: The Early Years of Python. Guido van Rossum discusses the initial development of Python, which has increasingly become the programming language of choice for many scientific fields due to its extensibility and ease of use. The first Web extra at http://youtu.be/xLVxoz-mQFs is a video in which Guido van Rossum talks with Charles Severance about the birth of the general-purpose, ",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including Wikipedia and GitHub's official blog, explicitly state that Guido van Rossum is the creator of the Python programming language.",
+          "checked_at": "2026-06-17T14:23:11.877149+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "The Python language was invented by Guido van Rossum.",
+          "char_start": 40,
+          "char_end": 92,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Guido van Rossum - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+              "snippet": "| Known\u00a0for | Creating the Python programming language \"Python (programming language)\") |. He is the creator of the Python programming language \"Python (programming language)\"), for which he was the \"benevolent dictator for life\" (BDFL) until he stepped down from the position on 12 July 2018. Van Rossum was born and raised in the Netherlands, where he received a master's degree in mathematics and ",
+              "published_date": null
+            },
+            {
+              "title": "Guido van Rossum - CHM - Computer History Museum",
+              "url": "https://computerhistory.org/profile/guido-van-rossum",
+              "snippet": "# Guido van Rossum. #### For the creation and evolution of the Python programming language and for leadership of its community. First released by its creator Guido van Rossum in 1991, Python has undergone continual improvement and has become a powerful yet flexible and easy-to- learn \u201cSwiss Army knife\u201d for programmers. In a 1999 report, Van Rossum highlighted the following as his goals for Python:",
+              "published_date": null
+            },
+            {
+              "title": "Guido Van Rossum Python Creator : r/learnprogramming - Reddit",
+              "url": "https://www.reddit.com/r/learnprogramming/comments/zaakd1/guido_van_rossum_python_creator",
+              "snippet": "Guido van Rossum the founder of Python programming language explained very beautifully why does python exists in the World today. r/Python.",
+              "published_date": null
+            },
+            {
+              "title": "Why Python is the language of AI: insights from Guido van Rossum ...",
+              "url": "https://www.youtube.com/watch?v=QXE5rEVlu20&vl=en",
+              "snippet": "Why Python is the language of AI: insights from Guido van Rossum (creator of Python)\nGitHub\n649000 subscribers\n7074 likes\n242999 views\n25 Nov 2025\nWe sat down with Guido van Rossum, the creator of Python, to discuss the origins of the language and its incredible trajectory in the 2025 Octoverse report. From its surprising name origin to its dominance in the age of AI, Guido shares his perspective ",
+              "published_date": null
+            },
+            {
+              "title": "Why developers still flock to Python: Guido van Rossum on ...",
+              "url": "https://github.blog/developer-skills/programming-languages-and-frameworks/why-developers-still-flock-to-python-guido-van-rossum-on-readability-ai-and-the-future-of-programming",
+              "snippet": "# Why developers still flock to Python: Guido van Rossum on readability, AI, and the future of programming. When we shared this year\u2019s Octoverse data with Guido van Rossum, the creator of Python, his first reaction was genuine surprise. While TypeScript overtook Python to become the most used language on GitHub as of August 2025 (marking the biggest language shift in more than a decade), Python st",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including Wikipedia and the Computer History Museum, explicitly state that Guido van Rossum created the Python programming language.",
+          "checked_at": "2026-06-17T14:23:12.246418+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "Guido van Rossum is the creator of the Python programming language.",
+          "char_start": 94,
+          "char_end": 160,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Guido van Rossum - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+              "snippet": "| Known\u00a0for | Creating the Python programming language \"Python (programming language)\") |. He is the creator of the Python programming language \"Python (programming language)\"), for which he was the \"benevolent dictator for life\" (BDFL) until he stepped down from the position on 12 July 2018. Van Rossum was born and raised in the Netherlands, where he received a master's degree in mathematics and ",
+              "published_date": null
+            },
+            {
+              "title": "Guido van Rossum - Brief Bio",
+              "url": "https://gvanrossum.github.io/bio.html",
+              "snippet": "# Guido van Rossum, 2006 Guido van Rossum - Brief Bio Guido van Rossum, 2019. Guido van Rossum is the creator of the Python programming language. He grew up in the Netherlands and studied at the University of Amsterdam, where he graduated with a Master's Degree in Mathematics and Computer Science. His first job after college was as a programmer at CWI, where he worked on the ABC language, the Amoe",
+              "published_date": null
+            },
+            {
+              "title": "Guido van Rossum | Biography | Research Starters | EBSCO Research",
+              "url": "https://www.ebsco.com/research-starters/biography/guido-van-rossum",
+              "snippet": "Guido van Rossum is a Dutch computer programmer best known for creating Python, a widely used high-level programming language that was first released in 1991. Initially conceived as a hobby during his Christmas vacation in 1989, Python was designed with a focus on clear syntax and extensibility, making it appealing to both novice and experienced programmers. Van Rossum's background includes a mast",
+              "published_date": null
+            },
+            {
+              "title": "Guido van Rossum - CHM - Computer History Museum",
+              "url": "https://computerhistory.org/profile/guido-van-rossum",
+              "snippet": "# Guido van Rossum. #### For the creation and evolution of the Python programming language and for leadership of its community. First released by its creator Guido van Rossum in 1991, Python has undergone continual improvement and has become a powerful yet flexible and easy-to- learn \u201cSwiss Army knife\u201d for programmers. In a 1999 report, Van Rossum highlighted the following as his goals for Python:",
+              "published_date": null
+            },
+            {
+              "title": "Guido Van Rossum Python Creator : r/learnprogramming - Reddit",
+              "url": "https://www.reddit.com/r/learnprogramming/comments/zaakd1/guido_van_rossum_python_creator",
+              "snippet": "Guido van Rossum the founder of Python programming language explained very beautifully why does python exists in the World today. r/Python.",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including Wikipedia, his personal bio page, EBSCO Research, and the Computer History Museum, explicitly state that Guido van Rossum is the creator of the Python programming language.",
+          "checked_at": "2026-06-17T14:23:12.596520+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "The Eiffel Tower is in Paris.",
+          "char_start": 162,
+          "char_end": 190,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Eiffel Tower in Paris, France",
+              "url": "https://maps.apple.com/place?place-id=IDBCCCA2A9059133",
+              "snippet": "# Apple Maps. Have a Business on Maps? # Eiffel Tower. The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889. Locally nicknamed \"La dame de fer\", it was constructed as the centerpiece of the 1889 World's Fair, and to crown the centennial anniversary of the F",
+              "published_date": null
+            },
+            {
+              "title": "In which part of Paris is the Eiffel Tower located? - Quora",
+              "url": "https://www.quora.com/In-which-part-of-Paris-is-the-Eiffel-Tower-located",
+              "snippet": "The Eiffel Tower is located in the 7th arrondissement of Paris, on the Champ de Mars, near the Seine River. The address of the Eiffel Tower is",
+              "published_date": null
+            },
+            {
+              "title": "Access: getting to the Eiffel Tower - OFFICIAL website",
+              "url": "https://www.toureiffel.paris/en/access-map",
+              "snippet": "The Eiffel Tower is located in the heart of Paris, in the 7th arrondissement, on the Champ de Mars, and is very easy to access. Another option is line C of the RER train network, which serves the Champ de Mars-Tour Eiffel station, located 5 minutes\u2019 walk from Entrance 1.You can also come by bus: lines 82, 30 and 42 serve stops 5 minutes\u2019 walk from Entrance 2 of the Eif... You can also come by bus:",
+              "published_date": null
+            },
+            {
+              "title": "Eiffel Tower",
+              "url": "https://kids.nationalgeographic.com/history/article/eiffel-tower",
+              "snippet": "# Eiffel Tower. The Eiffel Tower in Paris, France, has serious celeb status. Completed in March 1889, it's one of the most recognizable monuments in the world. And the site, which is also known as the Iron Lady, receives nearly seven millions tourists a year. If you were in charge of constructing the Eiffel Tower, where else would you live but ... Gustave Eiffel, who designed the landmark, built h",
+              "published_date": null
+            },
+            {
+              "title": "Eiffel Tower, Paris, France \u2014 Google Arts & Culture",
+              "url": "https://artsandculture.google.com/partner/tour-eiffel",
+              "snippet": "# Eiffel Tower. ## Paris, France. The Eiffel Tower was built by Gustave Eiffel for the 1889 Exposition Universelle, which was to celebrate the 100th year anniversary of the French Revolution. \"Utopia achieved\", a symbol of technological prowess, at the end of the 19th Century it was a demonstration of French engineering, and a defining moment of the industrial era. As France\u2019s symbol in the world,",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including Apple Maps, the official Eiffel Tower website, and National Geographic Kids, explicitly state that the Eiffel Tower is located in Paris, France, specifically on the Champ de Mars in the 7th arrondissement.",
+          "checked_at": "2026-06-17T14:23:12.317691+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
+    },
+    {
+      "id": "claim_cap",
+      "label": "Claim cap \u2014 text with 15+ extractable facts",
+      "findings": [
+        {
+          "check": "max_claims",
+          "status": "PASS",
+          "detail": "got 5, expected \u2264 5"
+        }
+      ],
+      "results": [
+        {
+          "claim": "Albert Einstein was born in 1879.",
+          "char_start": 0,
+          "char_end": 32,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Albert Einstein born | March 14, 1879 | HISTORY",
+              "url": "https://www.history.com/this-day-in-history/march-14/albert-einstein-born",
+              "snippet": "All the major chapters in the American story, from Indigenous beginnings to the present day. From prehistory, though antiquity and into the 21st century, all of history\u2019s biggest chapters. On March 14, 1879, Albert Einstein is born, the son of a Jewish electrical engineer in Ulm, Germany. Einstein\u2019s theories of special and general relativity drastically altered human understanding of the universe,",
+              "published_date": null
+            },
+            {
+              "title": "Albert Einstein was born on this day, 1879. - Reddit",
+              "url": "https://www.reddit.com/r/ColorizedHistory/comments/5zdgeq/albert_einstein_was_born_on_this_day_1879",
+              "snippet": "1 March 1929. Albert Einstein (14 March 1879 \u2013 18 April 1955) was a German-born theoretical physicist. He developed the general theory of",
+              "published_date": null
+            },
+            {
+              "title": "This Day In History: 03/14/1879 - Albert Einstein Born | HISTORY",
+              "url": "https://www.history.com/videos/this-day-in-history-03141879-albert-einstein-born",
+              "snippet": "All the major chapters in the American story, from Indigenous beginnings to the present day. History from countries and communities across the globe, including the world\u2019s major wars. From prehistory, though antiquity and into the 21st century, all of history\u2019s biggest chapters. # This Day In History: 03/14/1879 - Albert Einstein Born. On this day in 1879, Albert Einstein is born, the son of a Jew",
+              "published_date": null
+            },
+            {
+              "title": "Albert Einstein: In Brief | Institute for Advanced Study",
+              "url": "https://www.ias.edu/albert-einstein-brief",
+              "snippet": "# Albert Einstein: In Brief | Institute for Advanced Study. Begin typing to search for a section of this site. 2.    Albert Einstein: In Brief. In **1879**, Albert Einstein was born to a middle-class German Jewish family. His parents were concerned that he scarcely talked until the age of three, but he was not so much a backward as a quiet child. The next year he entered the Federal Institute of T",
+              "published_date": null
+            },
+            {
+              "title": "NASA Universe - Facebook",
+              "url": "https://www.facebook.com/NASAUniverse/posts/otd-in-1879-albert-einstein-was-born-we-still-test-einsteins-general-relativity-/1080097004158673",
+              "snippet": "Cited as one of the most influential scientists of the 20th century, Albert Einstein was born on this day in 1879 at W\u00fcrttemberg, Germany. He",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including HISTORY.com and the Institute for Advanced Study, explicitly state that Albert Einstein was born on March 14, 1879.",
+          "checked_at": "2026-06-17T14:23:22.143486+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "The speed of light is approximately 299,792 km/s.",
+          "char_start": 73,
+          "char_end": 121,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Speed of light is approximately 299,792 kilometers per second",
+              "url": "https://www.facebook.com/groups/ojlkixcwdwdowdocscso/posts/9072706496097231",
+              "snippet": "The speed of light in a vacuum is 186,282 miles per second (299,792 kilometers per second), and in theory nothing can travel faster than light.",
+              "published_date": null
+            },
+            {
+              "title": "Considering the speed of light is approximately 299,792 km/s ...",
+              "url": "https://www.proprep.com/questions/considering-the-speed-of-light-is-approximately-299792-kms-calculate-the-time-it-takes-for-light-fro",
+              "snippet": "The answer is 7.613 x 10^2 seconds, or approximately 12 minutes and 41 seconds. The calculation involves using the distance from the sun to Mars (1.416 x 10^8)",
+              "published_date": null
+            },
+            {
+              "title": "The speed of light is approximately 299'792'000 meters per second ...",
+              "url": "https://www.quora.com/The-speed-of-light-is-approximately-299792000-meters-per-second-What-is-this-speed-in-kilimeters-per-hour-Write-the-answer-in-a-standard-form-for-example-25000-2-5-10%E2%81%B4",
+              "snippet": "The speed of light is exactly equal to 299,792,458 metres per second and only approximately 300,000 kilometres per second; 186,000 miles per",
+              "published_date": null
+            },
+            {
+              "title": "Why is the speed of light precisely 299,792.458 kilometres per second? Why not more or less? : r/askscience",
+              "url": "https://www.reddit.com/r/askscience/comments/4ilzx4/why_is_the_speed_of_light_precisely_299792458",
+              "snippet": "The only reason that we think of the speed of light as a dimensionful constant with a particular value is because historically humans have insisted on measuring time and space with different units. If you measure time and space with the same units, the speed of light is just \"1\", a dimensionless constant, and all slower speeds are just fractions of the speed of light. This is what the speed of lig",
+              "published_date": null
+            },
+            {
+              "title": "Why is the speed of light a random finite number? | Science Questions with Surprising Answers",
+              "url": "https://wtamu.edu/~cbaird/sq/2024/02/07/why-is-the-speed-of-light-a-random-finite-number",
+              "snippet": "# Why is the speed of light a random finite number? The speed of light in vacuum is the universal speed limit, meaning that nothing can ever travel faster than this speed. If the speed of light is a universal and fundamental limit, you may wonder why it has a seemingly random value of 299,792,458 meters per second. The first thing to note is that the speed of light in vacuum only has the value of ",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple sources directly state that the speed of light in a vacuum is approximately 299,792 kilometers per second, with the exact value being 299,792,458 m/s (which rounds to 299,792 km/s).",
+          "checked_at": "2026-06-17T14:23:25.021315+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "DNA was discovered by Watson and Crick in 1953.",
+          "char_start": 123,
+          "char_end": 169,
+          "verdict": "confirmed",
+          "confidence_score": 95,
+          "sources": [
+            {
+              "title": "Chemical structure of DNA discovered by Watson and Crick | HISTORY",
+              "url": "https://www.history.com/this-day-in-history/february-28/watson-and-crick-discover-chemical-structure-of-dna",
+              "snippet": "All the major chapters in the American story, from Indigenous beginnings to the present day. On February 28, 1953, Cambridge University scientists James Watson and Francis Crick announce that they have determined the double-helix structure of DNA, the molecule containing human genes. In the early 1950s, Watson and Crick were only two of many scientists working on deciphering the structure of DNA. ",
+              "published_date": null
+            },
+            {
+              "title": "The Discovery of the Double Helix, 1951-1953 | Francis Crick",
+              "url": "https://profiles.nlm.nih.gov/spotlight/sc/feature/doublehelix",
+              "snippet": "The discovery in 1953 of the double helix, the twisted-ladder structure of deoxyribonucleic acid (DNA), by James Watson and Francis Crick marked a milestone",
+              "published_date": null
+            },
+            {
+              "title": "Today in 1953, James Watson, Francis Crick, Rosalind Franklin, and ...",
+              "url": "https://www.reddit.com/r/biology/comments/23yb9p/today_in_1953_james_watson_francis_crick_rosalind",
+              "snippet": "James Watson, Francis Crick, published their first papers describing the double helical structure of DNA in the journal Nature. discovered the",
+              "published_date": null
+            },
+            {
+              "title": "1953: When Genes Became \u201cInformation\u201d - ScienceDirect.com",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0092867413004534",
+              "snippet": "In 1953, Watson and Crick not only described the double-helix structure of DNA, but also embraced the idea that genes contained a code that expresses",
+              "published_date": null
+            },
+            {
+              "title": "What Rosalind Franklin truly contributed to the discovery of DNA\u2019s structure",
+              "url": "https://www.nature.com/articles/d41586-023-01313-5",
+              "snippet": "# What Rosalind Franklin truly contributed to the discovery of DNA\u2019s structure. The seminal paper from the pair at the University of Cambridge, UK, detailing the discovery of the DNA double helix, was published as part of a trio in *Nature* 70 years ago this week1\u20133. They are also widely believed to have hit on the structure only after stealing data from Rosalind Franklin, a physical chemist worki",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple sources confirm that James Watson and Francis Crick discovered the double-helix structure of DNA in 1953, with their findings published in Nature that year.",
+          "checked_at": "2026-06-17T14:23:22.527292+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "Mount Everest is the tallest mountain on Earth.",
+          "char_start": 171,
+          "char_end": 217,
+          "verdict": "confirmed",
+          "confidence_score": 95,
+          "sources": [
+            {
+              "title": "Is Mount Everest Really the Tallest Mountain in the World? - Britannica",
+              "url": "https://www.britannica.com/story/is-mount-everest-really-the-tallest-mountain-in-the-world",
+              "snippet": "Is Mount Everest Really the Tallest Mountain in the World? Snow-covered peak of Mount Everest rises above rugged, dark mountains and clouds under a clear blue sky in the Himalayas. Mount Everest Snow and ice surround the peak of Mount Everest, the highest point on Earth. Mount Everest is best described as the *highest* mountain in the world. In other words: it has the greatest elevation, at more t",
+              "published_date": null
+            },
+            {
+              "title": "Mount Everest",
+              "url": "https://education.nationalgeographic.org/resource/mount-everest",
+              "snippet": "![Image 1: Mount Everest is the highest of\u00a0the Himalayan mountains, and\u2014at 8,850 meters (29,035 feet)\u2014is considered the highest point on Earth.](https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892576/EducationHub/photos/mount-everest-snowdrift.jpg). [![Image 2: MapMaker: Perpetual Planet Mount Everest Expedition](https://images.nationalgeographic.org/image/upload",
+              "published_date": null
+            },
+            {
+              "title": "Mount Everest: The Tallest Mountain on Earth | Full Documentary",
+              "url": "https://www.youtube.com/watch?v=3-oYON9V8tA",
+              "snippet": "It is the tallest and biggest mountain on earth, as far removed from sea level as it's possible to be--and yet its sedimentary layers",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple authoritative sources including Britannica and National Geographic confirm that Mount Everest is the highest mountain on Earth with an elevation of 8,850 meters (29,035 feet) above sea level. While the BBC Science Focus article notes that Mauna Kea could be considered 'tallest' when measured from base to peak (most of which is underwater), the standard and widely accepted definition of 'tallest mountain on Earth' refers to elevation above sea level, which Mount Everest holds.",
+          "checked_at": "2026-06-17T14:23:25.249454+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "The French Revolution began in 1789.",
+          "char_start": 291,
+          "char_end": 326,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "French Revolution (1787-99) | History | Research Starters - EBSCO",
+              "url": "https://www.ebsco.com/research-starters/history/french-revolution-1787-99",
+              "snippet": "# French Revolution (1787-99). The French Revolution (1787-1799) was a pivotal event in European history that marked the end of absolute monarchy in France and initiated profound social and political changes. The revolution began in earnest with the storming of the Bastille on July 14, 1789, which symbolized the populace's rejection of oppressive rule. Key developments included the establishment o",
+              "published_date": null
+            },
+            {
+              "title": "French Revolution - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/French_Revolution",
+              "snippet": "# French Revolution. | Outcome | * Abolition of the *Ancien r\u00e9gime* and creation of constitutional monarchy * Proclamation of the French First Republic in September 1792 * Reign of Terror and execution of Louis XVI * French Revolutionary Wars * Establishment of the French Consulate in November 1799 |. The **French Revolution** was a period of political and societal change in France that began with",
+              "published_date": null
+            },
+            {
+              "title": "French Revolution - The National Archives",
+              "url": "https://www.nationalarchives.gov.uk/education/resources/french-revolution",
+              "snippet": "The French Revolution began in 1789 and lasted until 1794. King Louis XVI needed more money, but had failed to raise more taxes when he had called a meeting",
+              "published_date": null
+            },
+            {
+              "title": "// The French Revolution, which began in 1789, was a ... - Instagram",
+              "url": "https://www.instagram.com/reel/DMs-3dWzxox?hl=en",
+              "snippet": "The French Revolution was a major period of political and social change in France that began in 1789 due to widespread poverty, unfair taxation",
+              "published_date": null
+            },
+            {
+              "title": "French Revolution | History, Summary, Timeline, Causes, & Facts",
+              "url": "https://www.britannica.com/event/French-Revolution",
+              "snippet": "[French Revolution](https://www.britannica.com/event/French-Revolution). *   [Introduction & Top Questions](https://www.britannica.com/event/French-Revolution). *    [Origins of the Revolution](https://www.britannica.com/event/French-Revolution#ref326266). *    [Aristocratic revolt, 1787\u201389](https://www.britannica.com/event/French-Revolution/Aristocratic-revolt-1787-89). *    [Events of 1789](http",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including EBSCO, Wikipedia, The National Archives, and Britannica, explicitly state that the French Revolution began in 1789, with the storming of the Bastille on July 14, 1789, often cited as the symbolic start.",
+          "checked_at": "2026-06-17T14:23:25.047665+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
+    },
+    {
+      "id": "output_structure",
+      "label": "Output structure \u2014 validates all v2 fields",
+      "findings": [
+        {
+          "check": "min_claims",
+          "status": "PASS",
+          "detail": "got 1, expected \u2265 1"
+        },
+        {
+          "check": "output_structure",
+          "status": "PASS",
+          "detail": "all fields valid"
+        }
+      ],
+      "results": [
+        {
+          "claim": "The moon landing happened in 1969.",
+          "char_start": 0,
+          "char_end": 33,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "1969 Moon Landing - Date, Facts, Video - History.com",
+              "url": "https://www.history.com/articles/moon-landing-1969",
+              "snippet": "# 1969 Moon Landing. On July 20, 1969, American astronauts Neil Armstrong (1930-2012) and Edwin \"Buzz\" Aldrin (1930-) became the first humans ever to land on the moon. About six-and-a-half hours later, Armstrong became the first person to walk on the moon. The American effort to send astronauts to the moon had its origins in an appeal President Kennedy made to a special joint session of Congress o",
+              "published_date": null
+            },
+            {
+              "title": "WATCH: Footage from the 1969 Apollo 11 moon landing",
+              "url": "https://www.youtube.com/watch?v=hzApsIPHRwo",
+              "snippet": "WATCH: Footage from the 1969 Apollo 11 moon landing\nAssociated Press\n4510000 subscribers\n6000 likes\n1944722 views\n20 Jul 2024\nSaturday marks the 55th anniversary of the Apollo 11 moon landing by Neil Armstrong and Buzz Aldrin. The cosmos is providing a full moon, and there are plenty of other events to honor the first lunar landing on July 20, 1969. Read more: https://bit.ly/46eLjjj \n\n#apollo #apo",
+              "published_date": null
+            },
+            {
+              "title": "On this day 55 years ago, man landed on the moon. July 20, 1969 : r/NoSodiumStarfield",
+              "url": "https://www.reddit.com/r/NoSodiumStarfield/comments/1e7wfzm/on_this_day_55_years_ago_man_landed_on_the_moon",
+              "snippet": "# On this day 55 years ago, man landed on the moon. Skip to main contentOn this day 55 years ago, man landed on the moon. Sign UpSign up for RedditLog InLog in to Reddit. Image 1 Go to NoSodiumStarfield. Image 2: r/NoSodiumStarfield - On this day 55 years ago, man landed on the moon. July 20, 1969Image 3: r/NoSodiumStarfield - On this day 55 years ago, man landed on the moon. Image 6: Thumbnail im",
+              "published_date": null
+            },
+            {
+              "title": "1969 Moon Landing \u2014 The First Man on the Moon \u2013 LibertyFlags.com",
+              "url": "https://libertyflags.com/blogs/default-blog/1969-moon-landing-the-first-man-on-the-moon",
+              "snippet": "# 1969 Moon Landing \u2014 The First Man on the Moon. On July 20th, 1969, Commander Neil Armstrong and Lunar Module Pilot Buzz Aldrin landed the Apollo Lunar Module Eagle on the surface of the Moon. On July 21st, 1969, at 02:56 UTC, Neil Armstrong became the first human to step onto the lunar surface. Kennedy proposed the national goal of \u201clanding a man on the Moon and returning him safely to the Earth",
+              "published_date": null
+            },
+            {
+              "title": "Apollo 11 - NASA",
+              "url": "https://www.nasa.gov/mission/apollo-11",
+              "snippet": "Image 55: Astronaut Buzz Aldrin stands on the Moon facing a U.S. flag during the Apollo 11 mission in July 1969. Armstrong was one of nine men chosen of NASA\u2019s second astronaut group in 1962, and flew to space on the Gemini 8 mission in 1966 before being assigned to the Apollo 11 mission. Watch highlights from the Apollo 11 mission including the launch on July 16, 1969, the landing of the lunar mo",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including History.com, NASA, and the Associated Press, directly confirm that the Apollo 11 moon landing occurred on July 20, 1969, with Neil Armstrong and Buzz Aldrin becoming the first humans to land on the moon.",
+          "checked_at": "2026-06-17T14:23:32.102173+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
+    },
+    {
+      "id": "confidence_contrast",
+      "label": "Confidence contrast \u2014 contradicted vs confirmed",
+      "findings": [
+        {
+          "check": "min_claims",
+          "status": "PASS",
+          "detail": "got 2, expected \u2265 2"
+        },
+        {
+          "check": "score_review (manual)",
+          "status": "WARN",
+          "detail": "Review scores manually: [{'claim': 'The Earth orbits the Sun.', 'verdict': <VerdictEnum.confirmed: 'confirmed'>, 'confidence_score': 100}, {'claim': 'The Earth is flat and sits on the back of a giant turtle.', 'verdict': <VerdictEnum.contradicted: 'contradicted'>, 'confidence_score': 100}]"
+        }
+      ],
+      "results": [
+        {
+          "claim": "The Earth orbits the Sun.",
+          "char_start": 0,
+          "char_end": 24,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Earth's orbit - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Earth%27s_orbit",
+              "snippet": "Wikipedia\nThe Free Encyclopedia\n\n## Contents\n\n# Earth's orbit\n\nEarth orbits the Sun at an average distance of 149.60 million km (92.96 million mi), or 8.317 light-minutes, in a counterclockwise direction as viewed from above the Northern Hemisphere. One complete orbit takes 365.256 days (1 sidereal year), during which time Earth has traveled 940 million km (584 million mi). Ignoring the influence ",
+              "published_date": null
+            },
+            {
+              "title": "Why Does The Earth Orbit Around The Sun?",
+              "url": "https://www.youtube.com/watch?v=IXxQNvXDd-Q",
+              "snippet": "# Why Does The Earth Orbit Around The Sun?\n## Insane Curiosity\n645000 subscribers\n1747 likes\n\n### Description\n234915 views\nPosted: 17 Jan 2023\nSince the dawn of time, humans have pondered the question \u2013 why does the Earth revolve around the Sun? The answer lies in the powerful force of gravity, which binds the Sun and the planets together in our Solar System.\nThe Earth is held in orbit by the Sun\u2019",
+              "published_date": null
+            },
+            {
+              "title": "How do the Sun, Earth, and Moon move? \u2013 KidsEclipse",
+              "url": "https://kidseclipse.com/sun-earth-moon-move",
+              "snippet": "The Earth\u2019s path around the Sun is called its orbit. It takes the Earth one year, or 365 1/4 days, to completely orbit the Sun.\n\nAs the Earth orbits the Sun, the Moon orbits the Earth. The Moon\u2019s orbit lasts 27 1/2 days, but because the Earth keeps moving, it takes the Moon two extra days, 29 1/2, to come back to the same place in our sky.\n\nThe greatest picture ever taken of the Moon and the Earth",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple sources directly confirm that the Earth orbits the Sun, including Wikipedia's detailed article on Earth's orbit and educational resources explaining the Earth's orbital path around the Sun.",
+          "checked_at": "2026-06-17T14:23:41.368371+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        },
+        {
+          "claim": "The Earth is flat and sits on the back of a giant turtle.",
+          "char_start": 26,
+          "char_end": 82,
+          "verdict": "contradicted",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "The Science Behind Discworld's Flat Earth on the Back of a Turtle",
+              "url": "https://gizmodo.com/the-science-behind-discworlds-flat-earth-on-the-back-o-802628932",
+              "snippet": "Skip to content \n\nBooks & Comics  \n\n# The Science Behind Discworld\u2019s Flat Earth on the Back of a Turtle\n\nBy Ian Stewart, edited by Gareth Jenkins\n\nReading time 6 minutes\n\nComments  (0)\n\nThe world is flat, and resting on the backs of four elephants who, in turn, stand upon the back of a giant, space-faring turtle. Welcome to Terry Pratchett\u2019s Discworld. How does it all work? Pratchett, along with P",
+              "published_date": null
+            },
+            {
+              "title": "Turtles all the way down - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Turtles_all_the_way_down",
+              "snippet": "A well-known scientist (some say it was Bertrand Russell) once gave a public lecture on astronomy. He described how the earth orbits around the sun and how the sun, in turn, orbits around the centre of a vast collection of stars called our galaxy. At the end of the lecture, a little old lady at the back of the room got up and said: \"What you have told us is rubbish. The world is really a flat plat",
+              "published_date": null
+            },
+            {
+              "title": "World Turtle - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/World_Turtle",
+              "snippet": "In the start of the first chapter of the book A Brief History of Time by Stephen Hawking, an old woman says, \"What you have told us is rubbish. The world is really a flat plate supported on the back of a giant tortoise.\"\n\nThe film Strange World \"Strange World (film)\") is revealed to take place on and inside a World Turtle, with the characters trying to stop an infection from killing it.\n\nAccording",
+              "published_date": null
+            },
+            {
+              "title": "Why Is the World Always on the Back of a Turtle?",
+              "url": "https://www.atlasobscura.com/articles/world-turtle-cosmic-discworld",
+              "snippet": "Anyone who\u2019s ever heard the expression \u201cit\u2019s turtles all the way down\u201d is probably familiar with the image of the world being carried on the back of a giant turtle. While that philosophical one-liner is of relatively modern vintage, the cosmic turtle mytheme has appeared in disparate cultures across the globe for millennia. In honor of everyone\u2019s favorite intellectual quandary, let\u2019s take a moment",
+              "published_date": null
+            },
+            {
+              "title": "Turtle With the World On Its Back: Origin of a Myth",
+              "url": "https://www.youtube.com/watch?v=6d23fFEt0-A",
+              "snippet": "# Turtle With the World On Its Back: Origin of a Myth\n## Object History\n10200 subscribers\n1025 likes\n\n### Description\n54585 views\nPosted: 17 Sep 2021\nThis is my first video in a series where I will trace out how certain ancient myths were born.\n\nPlease note that some Native Americans used to call North America, Turtle Island (see video for details, obviously).\n\nCorrection- And I knew this too (!),",
+              "published_date": null
+            }
+          ],
+          "reasoning": "The search results consistently describe the flat Earth on a turtle as a fictional concept from Terry Pratchett's Discworld series, a mythological motif, or a philosophical joke \u2014 not a factual description of reality.",
+          "checked_at": "2026-06-17T14:23:42.045454+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
+    },
+    {
+      "id": "span_detection",
+      "label": "Span detection \u2014 char_start / char_end accuracy",
+      "findings": [
+        {
+          "check": "min_claims",
+          "status": "PASS",
+          "detail": "got 1, expected \u2265 1"
+        },
+        {
+          "check": "span_detection",
+          "status": "PASS",
+          "detail": "spans valid"
+        }
+      ],
+      "results": [
+        {
+          "claim": "Python was invented by Guido van Rossum in 1991.",
+          "char_start": 0,
+          "char_end": 47,
+          "verdict": "confirmed",
+          "confidence_score": 100,
+          "sources": [
+            {
+              "title": "Guido van Rossum | Biography | Research Starters - EBSCO",
+              "url": "https://www.ebsco.com/research-starters/biography/guido-van-rossum",
+              "snippet": "Guido van Rossum is a Dutch computer programmer best known for creating Python, a widely used high-level programming language that was first released in 1991. Initially conceived as a hobby during his Christmas vacation in 1989, Python was designed with a focus on clear syntax and extensibility, making it appealing to both novice and experienced programmers. Van Rossum's background includes a mast",
+              "published_date": null
+            },
+            {
+              "title": "Who invented Python and why? - Quora",
+              "url": "https://www.quora.com/Who-invented-Python-and-why",
+              "snippet": "Python was invented by Guido van Rossum. He was a Dutch programmer. Python was introduced on February 20,1991, to create a language that focuses",
+              "published_date": null
+            },
+            {
+              "title": "Guido van Rossum - CHM - Computer History Museum",
+              "url": "https://computerhistory.org/profile/guido-van-rossum",
+              "snippet": "# Guido van Rossum. #### For the creation and evolution of the Python programming language and for leadership of its community. First released by its creator Guido van Rossum in 1991, Python has undergone continual improvement and has become a powerful yet flexible and easy-to- learn \u201cSwiss Army knife\u201d for programmers. In a 1999 report, Van Rossum highlighted the following as his goals for Python:",
+              "published_date": null
+            },
+            {
+              "title": "Guido van Rossum - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+              "snippet": "| Known\u00a0for | Creating the Python programming language \"Python (programming language)\") |. He is the creator of the Python programming language \"Python (programming language)\"), for which he was the \"benevolent dictator for life\" (BDFL) until he stepped down from the position on 12 July 2018. Van Rossum was born and raised in the Netherlands, where he received a master's degree in mathematics and ",
+              "published_date": null
+            },
+            {
+              "title": "POV: You invented the programming language, Python. Happy ...",
+              "url": "https://www.facebook.com/AssociationForComputingMachinery/videos/guido-van-rossum-reelmp4/1226734678824981",
+              "snippet": "Happy birthday, Guido van Rossum! Van Rossum is the creator of Python and one of the most influential figures in modern computing. His vision",
+              "published_date": null
+            }
+          ],
+          "reasoning": "Multiple reliable sources, including Wikipedia, the Computer History Museum, and EBSCO, directly confirm that Guido van Rossum created Python and first released it in 1991.",
+          "checked_at": "2026-06-17T14:23:49.351119+00:00",
+          "model_used": "LongCat-2.0-Preview"
+        }
+      ]
+    },
+    {
+      "id": "no_claims_text",
+      "label": "No-claims text \u2014 opinions and questions only",
+      "findings": [
+        {
+          "check": "max_claims",
+          "status": "PASS",
+          "detail": "got 0, expected \u2264 0"
+        }
+      ],
+      "results": []
     }
-]
+  ]
+}
